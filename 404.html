@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>404</title>
+
+	<style>
+		div{
+			
+		}
+		div img{
+			max-width: 100%;
+			display: block;
+			margin:0 auto;
+			
+		}
+		h1{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="img/嘿嘿1.jpg">
+	</div>
+	<h1>Oh Nyo ~ Sorry ~ The page is not found
+		<br>I'm Gawr Gura, have a nice day.
+	</h1>
+	
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="row d-flex ">
+				<div class="footer-col">
+					<h4>亞太綜合研究院</h4>
+					<ul>
+						<li><a href="index.html">首頁</a></li>
+						<li><a href="本院簡介.html">本院簡介</a></li>
+						<li><a href="各所簡介.html">各所簡介</a></li>
+						<li><a href="公告們/課程公告1.html">活動公告</a></li>
+						<li><a href="課程資訊.html">課程資訊</a></li>
+						<li><a href="學員心得.html">學員心得</a></li>
+						<li><a href="研究與活動.html">研究與活動</a></li>
+						<li><a href="相關機構.html">相關機構</a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="footer-col">
+					<h4>
+						相關人士
+					</h4>
+					<ul>
+						<li><a href="#">捐助人 劉快治 女士</a></li>
+						<li><a href="http://www.twaprf.org/FounderWJHresume.htm" target="_blank">董事長 王仁宏 博士 </a></li>
+						<li><a href="http://www.twaprf.org/20230101TangShaocheng.pdf" target="_blank">院長 湯紹成 博士</a></li>
+					</ul>
+
+
+				</div>
+
+				<div class="footer-col ">
+					<h4>追蹤我們</h4>
+					<ul class="social-links">
+						<li><a href="https://www.facebook.com/kao.aprf/"><i class="fa-brands fa-facebook"></i></a></li>
+					</ul>
+
+				</div>
+
+				<div class="footer-col">
+					<h4>聯絡資訊</h4>
+					<ul>
+						<li><a href="mailto:aprf7029@ms15.hinet.net">Email: aprf7029@ms15.hinet.net</a></li>
+						<li><a href="#">院址:高雄市前鎮區民權二路八號二十五樓</a></li>
+						<li><a href="#">TEL：(07)3357131</a></li>
+						<li><a href="#">FAX：(07)3363465</a></li>
+						<hr />
+						<li><a href="#">台北辦公室:台北市大安區和平東路一段216號10樓</a></li>
+						<li><a href="#">TEL：(02)23683688</a></li>
+						<li><a href="#">FAX：(02)23643624</a></li>
+
+					</ul>
+
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+	<script>
+		var prevScrollPos = window.pageYOffset;
+		var scrollThreshold = 70; // 滚动阈值
+
+		window.onscroll = function () {
+			var currentScrollPos = window.pageYOffset;
+			var scrollDifference = Math.abs(currentScrollPos - prevScrollPos);
+
+			if (scrollDifference >= scrollThreshold) {
+				if (prevScrollPos > currentScrollPos) {
+					document.getElementById("main-header").classList.remove("scroll-hide");
+				} else {
+					document.getElementById("main-header").classList.add("scroll-hide");
+				}
+
+				prevScrollPos = currentScrollPos;
+			}
+		};
+
+
+	</script>
+</body>
+</html>
