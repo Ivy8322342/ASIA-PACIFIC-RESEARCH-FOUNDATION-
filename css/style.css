@@ -163,7 +163,7 @@ span.carousel-control-prev-icon,span.carousel-control-next-icon{
 
 /* 小介紹 */
 .小介紹{
-	height: 350px;
+	/* height: 350px; */
 	background-color: var(--bgc);
 	color:var(--p-color);
 	max-width: 100%;
@@ -423,6 +423,11 @@ footer .container .row .footer-col ul.social-links a{
 
 
 @media screen and (max-width:576px) {
+	.top_first ul li{
+		margin-right: 0.7rem;
+		list-style:none;
+		
+	}
 	
 	.navbar-brand img{
 max-height:70px;
