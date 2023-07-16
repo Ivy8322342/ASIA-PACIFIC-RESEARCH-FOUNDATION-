@@ -2,1069 +2,806 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            background-color: #D5E7EA;
-        }
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- bootstrap5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body {
+			font-family: 'Noto Sans TC', sans-serif;
+			background-color: #D5E7EA;
+		}
 
-        .container {
-            padding-left: 0.2rem;
-            padding-right: 0.2rem;
-        }
+		.container {
+			padding-left: 0.2rem;
+			padding-right: 0.2rem;
+		}
 
-        .container .content {
-            padding: 3rem 1.5rem;
-        }
+		.container .content {
+			padding: 3rem 1.5rem;
+		}
 
-        .content h3 {
-            position: relative;
-            margin-bottom: 2.3rem;
-        }
+		.content h3 {
+			position: relative;
+			margin-bottom: 2.3rem;
+		}
 
-        .content h3::after {
-            content: "";
-            width: 50%;
-            height: 5px;
-            background: var(--bgc);
-            position: absolute;
-            bottom: -15px;
-            left: 0;
+		.content h3::after {
+			content: "";
+			width: 50%;
+			height: 5px;
+			background: var(--bgc);
+			position: absolute;
+			bottom: -15px;
+			left: 0;
 
-        }
+		}
 
-        li {
-            list-style: none;
-        }
+		li {
+			list-style: none;
+		}
 
-        .計畫與發展方向>li {
-            list-style: disc;
-        }
+		.計畫與發展方向>li {
+			list-style: disc;
+		}
 
-        .collapse .card-body ul li {
-            list-style: square;
-            font-size: 18px;
-        }
+		.collapse .card-body ul li {
+			list-style: square;
+			font-size: 18px;
+		}
 
-        .collapse ul li>ul>li {
-            list-style: none;
-        }
+		.collapse ul li>ul>li {
+			list-style: none;
+		}
 
-        #main-header {
-            transition: transform 0.3s ease-in-out;
-        }
+		#main-header {
+			transition: transform 0.3s ease-in-out;
+		}
 
-        .scroll-hide {
-            transform: translateY(-130%);
-        }
+		.scroll-hide {
+			transform: translateY(-130%);
+		}
 
-        .bgc {
-            background-color: var(--bgc);
-        }
-    </style>
+		.bgc {
+			background-color: var(--bgc);
+		}
+	</style>
 
-    <title>亞太綜合研究院</title>
+	<title>亞太綜合研究院</title>
 
 </head>
 
 <body>
-    <header>
-        <div class="top_first">
+	<header>
+		<div class="top_first">
 
-            <ul class="d-flex">
-                <li><a href="mailto:aprf7029@ms15.hinet.net">Email</a></li>
-                <li><a href="tel:073357131">(07)3357131</a></li>
-                <li><a href="indexE.html">English</a></li>
-                <li><a href="index.html">中文</a></li>
-            </ul>
-        </div>
-        <div class="top_second" id="main-header">
-
-
-            <nav class="navbar navbar-expand-xl bg-body-tertiary px-4">
-                <div class="container-fluid">
-                    <a class="navbar-brand ms-2" href="index.html">
-                        <img src="img/logo.jpg">
-                        <h1>亞太綜合研究院</h1>
-                    </a>
+			<ul class="d-flex">
+				<li><a href="mailto:aprf7029@ms15.hinet.net">Email</a></li>
+				<li><a href="tel:073357131">(07)3357131</a></li>
+				<li><a href="indexE.html">English</a></li>
+				<li><a href="index.html">中文</a></li>
+			</ul>
+		</div>
+		<div class="top_second" id="main-header">
 
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="about.html" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    關於
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="本院簡介.html">本院簡介</a></li>
-                                    <li><a class="dropdown-item" href="各所簡介.html">各所簡介</a></li>
-                                    <li><a class="dropdown-item" href="培訓推廣中心.html">培訓推廣中心</a></li>
-                                    <!-- <li><hr class="dropdown-divider"></li>
+			<nav class="navbar navbar-expand-xl bg-body-tertiary px-4">
+				<div class="container-fluid">
+					<a class="navbar-brand ms-2" href="index.html">
+						<img src="img/logo.jpg">
+						<h1>亞太綜合研究院</h1>
+					</a>
+
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="about.html" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									關於
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="本院簡介.html">本院簡介</a></li>
+									<li><a class="dropdown-item" href="各所簡介.html">各所簡介</a></li>
+									<li><a class="dropdown-item" href="培訓推廣中心.html">培訓推廣中心</a></li>
+									<!-- <li><hr class="dropdown-divider"></li>
 								<li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">活動公告</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./公告們/課程公告1.html">勞動部勞動力發展署<br>112年下半年「產業人才投資方案」</a></li>
-                                    <li><a class="dropdown-item" href="./公告們/亞太講堂招生簡章及報名表-八月主題.pdf">2023年【亞太講堂】八月份主題:
-                                        <br>當前國際與兩岸政經情勢分析</a></li>
-                                </ul>
+								aria-expanded="false">活動公告</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="./公告們/課程公告1.html">勞動部勞動力發展署<br>112年下半年「產業人才投資方案」</a></li>
+									<li><a class="dropdown-item" href="./公告們/亞太講堂招生簡章及報名表-八月主題.pdf">2023年【亞太講堂】八月份主題:
+										<br>當前國際與兩岸政經情勢分析</a></li>
+								</ul>
 							</li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    關於課程
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="課程資訊.html">課程資訊</a></li>
-                                    <li><a class="dropdown-item" href="學員心得.html">學員心得</a></li>
-                                </ul>
-                            </li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									關於課程
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="課程資訊.html">課程資訊</a></li>
+									<li><a class="dropdown-item" href="學員心得.html">學員心得</a></li>
+								</ul>
+							</li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="研究與活動.html">研究與活動</a>
-                            </li>
+							<li class="nav-item">
+								<a class="nav-link" href="研究與活動.html">研究與活動</a>
+							</li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="相關機構.html">相關機構</a>
-                            </li>
-                        </ul>
-                        <!-- <form class="d-flex" role="search">
+							<li class="nav-item">
+								<a class="nav-link" href="相關機構.html">相關機構</a>
+							</li>
+						</ul>
+						<!-- <form class="d-flex" role="search">
 						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 						<button class="btn btn-outline-success" type="submit">Search</button>
 					</form> -->
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-    </header>
-
-    <section class="container ">
-        <h3 class="subtitle">課程資訊</h3>
-        <div class="content  ">
-            <h3 class="ms-0">生活職場 英語會話班 第01期</h3>
-            <div class="table-responsive w-100 mb-5">
-                <table class="table   table-bordered border-dark ">
-                    <thead class="text-light bgc text-center">
-                        <tr>
-                            <th scope="col">班別名稱</th>
-                            <th scope="col">訓練起迄
-
-                                日期</th>
-                            <th scope="col">上課時間</th>
-                            <th scope="col">訓練
-                                人數</th>
-                            <th scope="col">時數</th>
-                            <th scope="col">講師姓名</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th style="font-size: large;" class="bg-light " rowspan="18">生活職場
-                                英語會話班
-                                第01期 <br><a class="btn btn-primary btn-md mt-3"
-                                    href="http://www.twaprf.org/1120308English.pdf" target="_blank">招生簡章</a></th>
-                            <td>112/03/08
-
-                                ~
-
-                                112/06/14</td>
-                            <td>週三18:30 ~21:30</td>
-                            <td>20</td>
-                            <td>42</td>
-                            <td>吳雪鳳</td>
-
-                        </tr>
-                        <tr>
-                            <td colspan="5">訓練目標：協助學員具備日常生活之英語聽、說、讀、寫綜合能力(尤聽、說技巧)， 建立工作中口說英文之信心。<br>
-                                學員資格條件：<br>
-                                1、須具備全民英檢初中級或等同程度之英語能力者為佳。
-                                <br>2、從事產業或工作對英語有需求者。
-                                <br>3、對商務英語有興趣者。
-                                <br>
-                                課程內容： 教材名稱: Evolve 3A
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" rowspan="16">
-                                <table class="table
-                                table-hover
-                                table-bordered border-dark">
-                                    <thead class="text-light bgc text-center">
-                                        <tr>
-                                            <th scope="col">堂數</th>
-                                            <th scope="col">日期</th>
-                                            <th scope="col">授課時間</th>
-                                            <th scope="col">時數</th>
-                                            <th scope="col">課程進度/內容</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>3/8
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>
-                                                Introduction<br>
-                                                Unit 1: Who we are
-                                                <ul>
-                                                    <li>談論人們的個性</li>
-                                                    <li>詢問及答覆有關人員的問題</li>
-                                                    <li>口語語法：間接問句</li>
-                                                </ul>
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>2</th>
-                                            <td>3/15
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Unit 1: Who we are<ul>
-                                                    <li>介紹並結識他人</li>
-                                                    <li>寫電子信件為瞭解某人</li>
-                                                    <li>探知領導者的個性</li>
-                                                </ul>
-                                            </td>
-
-
-                                        </tr>
-                                        <tr>
-                                            <th>3</th>
-                                            <td>3/22
-
-                                                (三)
-
-                                            </td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Unit 2: So much stuff
-                                                <ul>
-                                                    <li>談論事物之存留問題</li>
-                                                    <li>談論個人物品</li>
-                                                    <li>口語語法：現在完成式</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>4</th>
-                                            <td>3/29
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Unit 2: So much stuff
-                                                <ul>
-                                                    <li>談話中切換話題之技巧
-                                                    </li>
-                                                    <li>線上廣告詞之書寫</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-
-                                            <td colspan="5" class="text-light
-                                            text-center bgc" style="background-color:var(--bgc) ;">4/5(三)停課一次</td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>5</th>
-                                            <td>4/12
-
-                                                (三)</td>
-                                            <td>18:30-21:30
-
-                                            </td>
-                                            <td>3</td>
-                                            <td>Unit 3: Smart moves
-                                                <ul>
-                                                    <li>詢問並答覆所居住城市的相關問題</li>
-                                                    <li>談論兩地之間的交通運輸</li>
-                                                    <li>口語語法：如何提供意見</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>6</th>
-                                            <td>4/19
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Unit 3: Smart moves
-                                                <ul>
-                                                    <li>辦公大樓內的問路與指路</li>
-                                                    <li>書寫應徵工作之個人簡歷</li>
-                                                    <li>非公務之閒聊：私人景點</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>7</th>
-                                            <td>4/26
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Review of Units 1-3
-                                                <ul>
-                                                    <li>語彙複習與運用</li>
-                                                    <li>情境摸擬互動練習</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>8</th>
-                                            <td>5/3
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Unit 4: Think first
-                                                <ul>
-                                                    <li>意見描述與回應</li>
-                                                    <li>制定旅行計畫</li>
-                                                    <li>口語語法：表達未來行動</li>
-
-                                                </ul>
-
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>9</th>
-                                            <td>5/10
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Unit 4: Think first
-                                                <ul>
-                                                    <li>
-                                                        消除疑慮與其回應
-                                                    </li>
-                                                    <li>活動計畫之電子郵件書寫</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>10</th>
-                                            <td>5/17
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Unit 5: And then
-                                                <ul>
-                                                    <li>談論失物與協尋公告</li>
-                                                    <li>請求協助與提供協助</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>11</th>
-                                            <td>5/24
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Unit 5: And then
-                                                <ul>
-                                                    <li>令人驚訝的狀況之詳述</li>
-                                                    <li>簡要事務之書寫與比較</li>
-                                                    <li>口語語法：簡單過去式與過去進行式</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>12</th>
-                                            <td>5/31
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Unit 6: Impact
-                                                <ul>
-                                                    <li>談論城市問題</li>
-                                                    <li>談論問題及其解決方案</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>13</th>
-                                            <td>6/7
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Unit 6: Impact
-                                                <ul>
-                                                    <li>
-                                                        不同情況下如何表達關切與救助
-                                                    </li>
-                                                    <li>觀點之表達與書寫</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>14</th>
-                                            <td>6/14
-
-                                                (三)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>Review of Units 4-6
-                                                <ul>
-                                                    <li>總複習及生活職場情境模擬互動</li>
-                                                </ul>
-                                            </td>
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </td>
-
-                        </tr>
-                    </tbody>
-
-                </table>
-            </div>
-
-
-            <!-- 商用日語 -->
-
-
-
-            <h3>商用日語實務班
-                第01期</h3>
-            <div class="table-responsive w-100 mb-5">
-                <table class="table   table-bordered border-dark ">
-                    <thead class="text-light bgc text-center">
-                        <tr>
-                            <th scope="col">班別名稱</th>
-                            <th scope="col">訓練起迄
-
-                                日期</th>
-                            <th scope="col">上課時間</th>
-                            <th scope="col">訓練
-                                人數</th>
-                            <th scope="col">時數</th>
-                            <th scope="col">講師姓名</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th style="font-size: large;" class="bg-light " rowspan="18">商用日語實務班
-                                第01期<br><a class="btn btn-primary btn-md mt-3"
-                                    href="http://www.twaprf.org/1120417Japanese.pdf" target="_blank">招生簡章</a></th>
-                            <td>112/04/17
-
-                                ~
-
-                                112/06/05</td>
-                            <td>週一18:30 ~21:30
-
-                                週四18:30 ~21:30</td>
-                            <td>20</td>
-                            <td>42</td>
-                            <td>林田響子</td>
-
-                        </tr>
-                        <tr>
-                            <td colspan="5">
-                                訓練目標：日籍老師循序漸進方式，確實掌握文意及文法的運用，使學員能更靈活應用與表達，並能在就業職場方面更能得心應手；藉由演練與測驗，增加日語文意及文法的運用能力及提升職場語言溝通能力，而擴大自己的就業職場及國際視野，為職場表現加分。<br>
-                                學員資格條件：<br>
-                                1、須具備N4日文能力或等同程度之日文能力者為佳。
-                                <br>2、從事產業或工作對日文有需求者。
-                                <br>3、對商用日文有興趣者。
-                                <br>
-                                課程內容： 教材名稱: 情境日本語聴‧説‧演練會話集(初中級篇1)
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" rowspan="16">
-                                <table class="table
-                                    table-hover
-                                    table-bordered border-dark">
-                                    <thead class="text-light bgc text-center">
-                                        <tr>
-                                            <th scope="col">堂數</th>
-                                            <th scope="col">日期</th>
-                                            <th scope="col">授課時間</th>
-                                            <th scope="col">時數</th>
-                                            <th scope="col">課程進度/內容</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>4/17
-
-                                                (一)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>
-                                                貸してもらう(貸款)-貸してもらうように頼む(請求借予貸款)/文法解析及運用
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>2</th>
-                                            <td>4/20
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>貸してもらう(貸款)-貸すのを断る(被拒絶貸款)/文法解析及運用
-                                            </td>
-
-
-                                        </tr>
-                                        <tr>
-                                            <th>3</th>
-                                            <td>4/24
-
-                                                (一)
-
-                                            </td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>予定を变更する(預約變更)-予定の变更を頼む(商談變更預約的日程)/文法解析及運用 </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>4</th>
-                                            <td>4/27
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>予定を变更する(預約變更)-できなくなつた理由を說明する(描述變更的理由)/文法解析及運用
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-
-                                            <td colspan="5" class="text-light
-                                                text-center bgc" style="background-color:var(--bgc) ;">5/1(一)停課一次</td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>5</th>
-                                            <td>5/4
-
-                                                (四)
-
-                                            </td>
-                                            <td>18:30-21:30
-
-                                            </td>
-                                            <td>3</td>
-                                            <td>レストラソで(餐飲業)-質問する(詢問原因)/文法解析及運用
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>6</th>
-                                            <td>5/8
-
-                                                (一)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>レストラソで(餐飲業)-相手の間違いを指摘する(被指正內容錯誤)/文法解析及運用 </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>7</th>
-                                            <td>5/11
-
-                                                (四)
-
-                                            </td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>買い物(訂購商品)-人に何かを勧める(推薦新商品)/文法解析及運用
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>8</th>
-                                            <td>5/15
-
-                                                (一)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>買い物(訂購商品)-相手の意見を聞いて何にするか決める(聽從推薦,決定購買)/文法解析及運用
-
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>9</th>
-                                            <td>5/18
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>買い物(訂購商品)-勧めを断る(拒絶購買)/文法解析及運用
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>10</th>
-                                            <td>5/22
-
-                                                (一)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>アルバイトを探す(兼職)-新しい話題を始める(談論面試的動機)/文法解析及運用 </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>11</th>
-                                            <td>5/25
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>アルバイトを探す(兼職)-自分の希望を述べる(對公司薪資的期許)/文法解析及運用 </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>12</th>
-                                            <td>5/29
-
-                                                (一)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>交通手段-条件を述べる(講述條件)/文法解析及運用 </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>13</th>
-                                            <td>6/1
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>ゆずります(轉讓)-申し出る(提出轉讓)/文法解析及運用
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>14</th>
-                                            <td>6/5
-
-                                                (一)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>總複習 </td>
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </td>
-
-                        </tr>
-                    </tbody>
-
-                </table>
-            </div>
-
-            <!--  -->
-
-
-
-
-            
-            <h3>實用職場日語進階班
-                第01期</h3>
-            <div class="table-responsive w-100 mb-5">
-                <table class="table   table-bordered border-dark ">
-                    <thead class="text-light bgc text-center">
-                        <tr>
-                            <th scope="col">班別名稱</th>
-                            <th scope="col">訓練起迄
-
-                                日期</th>
-                            <th scope="col">上課時間</th>
-                            <th scope="col">訓練
-                                人數</th>
-                            <th scope="col">時數</th>
-                            <th scope="col">講師姓名</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th style="font-size: large;" class="bg-light " rowspan="18">實用職場日語進階班
-                                第01期<br><a class="btn btn-primary btn-md mt-3"
-                                    href="http://www.twaprf.org/1120413Japanese.pdf" target="_blank">招生簡章</a></th>
-                            <td>112/04/13
-
-                                |
-                                
-                                112/07/20</td>
-                            <td>週四18:30 ~21:30</td>
-                            <td>20</td>
-                            <td>42</td>
-                            <td>林田義行</td>
-
-                        </tr>
-                        <tr>
-                            <td colspan="5">
-                                訓練目標：藉由各種不同情境的模擬與演練，增加日文聽、說、讀、寫的能力及提升職場語言溝通能力，而擴大自己的就業職場及國際視野，為職場表現加分。<br>
-                                學員資格條件：<br>
-                                1、須具備N3日文能力或等同程度之日文能力者為佳。
-                                <br>2、從事產業或工作對日文有需求者。
-                                <br> 3、對商用進階日文有興趣者。
-                                <br>
-                                教材名稱: 情境日本語聴‧説‧演練會話集(初中級篇2)
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" rowspan="16">
-                                <table class="table
-                                    table-hover
-                                    table-bordered border-dark">
-                                    <thead class="text-light bgc text-center">
-                                        <tr>
-                                            <th scope="col">堂數</th>
-                                            <th scope="col">日期</th>
-                                            <th scope="col">授課時間</th>
-                                            <th scope="col">時數</th>
-                                            <th scope="col">課程進度/內容</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>4/13
-
-                                                (四)
-                                               
-                                               </td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>
-                                                概論、教科書紹介
-
-職場會話運用-自己紹介/聽•說練習
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>2</th>
-                                            <td>4/20
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-次の場面で自己紹介をしてください(場合自我介紹)、人を紹介する(介紹他人互相認識) /聽•說練習
-                                            </td>
-
-
-                                        </tr>
-                                        <tr>
-                                            <th>3</th>
-                                            <td>4/27
-
-                                                (四)
-
-                                            </td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-ホテルで(在飯店) -これから質問をするときの前置き(表達要詢間事情) /聽•說練習 </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>4</th>
-                                            <td>5/4
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-ホテルで(在飯店)- あるかどうか/できるかどうか、たずれる(詢問是否有/是否可以) /聽•說練習
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>5</th>
-                                            <td>5/11
-
-                                                (四)
-
-                                            </td>
-                                            <td>18:30-21:30
-
-                                            </td>
-                                            <td>3</td>
-                                            <td>職場會話運用-うわさ(傳聞) -聞いた話を切り出す(告訴對方自己所聽到的事情) /聽•說練習
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>6</th>
-                                            <td>5/18
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-うわさ(傳聞)-相手からの情報に反応する(回應對方所告知的事情) /聽•說練習 </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>7</th>
-                                            <td>5/25
-
-                                                (四)
-
-                                            </td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-能力について述べる(說說與能力相關的事) /聽•說練習
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>8</th>
-                                            <td>6/1
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-申し出る(主動提出做…) /聽•說練習
-
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>9</th>
-                                            <td>6/8
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-自分の失敗をほかの人に伝える(告訴他人自己的失敗情形) /聽•說練習
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>10</th>
-                                            <td>6/15
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-惡い結果を心配していることを伝える(告訴對方你在擔心可能造成的不良後果) /聽•說練習</td>
-
-                                        </tr>
-                                        <tr>
-
-                                            <td colspan="5" class="text-light
-                                                text-center bgc" style="background-color:var(--bgc) ;">6/22(四)停課一次</td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>11</th>
-                                            <td>6/29
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-電話をかける(打電話)-用件を伝える(傳達要事) /聽•說練習 </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>12</th>
-                                            <td>7/6
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-電話をかける(打電話)-伝言をする(留言) /聽•說練習</td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>13</th>
-                                            <td>7/13
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-アドバイス(諮詢) /聽•說練習
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>14</th>
-                                            <td>7/20
-
-                                                (四)</td>
-                                            <td>18:30-21:30</td>
-                                            <td>3</td>
-                                            <td>職場會話運用-駅で質問する(在車站的詢問…) /聽•說練習 </td>
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </td>
-
-                        </tr>
-                    </tbody>
-
-                </table>
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-
-
-
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="row d-flex ">
-                <div class="footer-col">
-                    <h4>亞太綜合研究院</h4>
-                    <ul>
-                        <li><a href="index.html">首頁</a></li>
-                        <li><a href="本院簡介.html">本院簡介</a></li>
-                        <li><a href="各所簡介.html">各所簡介</a></li>
-                        <li><a href="公告們/課程公告1.html">活動公告</a></li>
-                        <li><a href="課程資訊.html">課程資訊</a></li>
-                        <li><a href="學員心得.html">學員心得</a></li>
-                        <li><a href="研究與活動.html">研究與活動</a></li>
-                        <li><a href="相關機構.html">相關機構</a></li>
-
-                    </ul>
-
-                </div>
-
-                <div class="footer-col">
-                    <h4>
-                        相關人士
-                    </h4>
-                    <ul>
-                        <li><a href="#">捐助人 劉快治 女士</a></li>
-                        <li><a href="http://www.twaprf.org/FounderWJHresume.htm" target="_blank">董事長 王仁宏 博士 </a></li>
-                        <li><a href="http://www.twaprf.org/20230101TangShaocheng.pdf" target="_blank">院長 湯紹成 博士</a></li>
-                    </ul>
-
-
-                </div>
-
-                <div class="footer-col ">
-                    <h4>追蹤我們</h4>
-                    <ul class="social-links">
-                        <li><a href="https://www.facebook.com/kao.aprf/"><i class="fa-brands fa-facebook"></i></a></li>
-                    </ul>
-
-                </div>
-
-                <div class="footer-col">
-                    <h4>聯絡資訊</h4>
-                    <ul>
-                        <li><a href="mailto:aprf7029@ms15.hinet.net">Email: aprf7029@ms15.hinet.net</a></li>
-                        <li><a href="#">院址:高雄市前鎮區民權二路八號二十五樓</a></li>
-                        <li><a href="#">TEL：(07)3357131</a></li>
-                        <li><a href="#">FAX：(07)3363465</a></li>
-                        <hr />
-                        <li><a href="#">台北辦公室:台北市大安區和平東路一段216號10樓</a></li>
-                        <li><a href="#">TEL：(02)23683688</a></li>
-                        <li><a href="#">FAX：(02)23643624</a></li>
-
-                    </ul>
-
-                </div>
-
-
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script>
-        var prevScrollPos = window.pageYOffset;
-        var scrollThreshold = 70; // 滚动阈值
-
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            var scrollDifference = Math.abs(currentScrollPos - prevScrollPos);
-
-            if (scrollDifference >= scrollThreshold) {
-                if (prevScrollPos > currentScrollPos) {
-                    document.getElementById("main-header").classList.remove("scroll-hide");
-                } else {
-                    document.getElementById("main-header").classList.add("scroll-hide");
-                }
-
-                prevScrollPos = currentScrollPos;
-            }
-        };
-
-
-    </script>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+	</header>
+
+	<section class="container ">
+		<h3 class="subtitle">課程資訊</h3>
+		<div class="content  ">
+			<h3 class="ms-0">財團法人亞太綜合研究院－112年生活職場英語會話班第2期</h3>
+			<div class="table-responsive w-100 mb-5">
+				<table class="table   table-bordered border-dark ">
+					<thead class="text-light bgc text-center">
+						<tr>
+							<th scope="col">班別名稱</th>
+							<th scope="col">訓練起迄
+
+								日期</th>
+							<th scope="col">上課時間</th>
+							<th scope="col">訓練
+								人數</th>
+							<th scope="col">時數</th>
+							<th scope="col">講師姓名</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th style="font-size: large;" class="bg-light " rowspan="18">112年生活職場英語會話班第2期 <br><a class="btn btn-primary btn-md mt-3"
+									href="公告們/招訓簡章-生活職場英語會話班第02期.pdf" target="_blank">招生簡章</a></th>
+							<td>112/09/06
+
+								~
+
+								112/12/13</td>
+							<td>週三18:30 ~21:30</td>
+							<td>20</td>
+							<td>42</td>
+							<td>吳雪鳳</td>
+
+						</tr>
+						<tr>
+							<td colspan="5">訓練目標：協助學員具備日常生活之英語聽、說、讀、寫綜合能力(尤聽、說技巧)， 建立工作中口說英文之信心。<br>
+								學員資格條件：<br>
+								1、須具備全民英檢初中級或等同程度之英語能力者為佳。
+								<br>2、從事產業或工作對英語有需求者。
+								<br>3、對商務英語有興趣者。
+								<br>
+								課程內容： 教材名稱: Evolve 3B
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5" rowspan="16">
+								<table class="table
+								table-hover
+								table-bordered border-dark">
+									<thead class="text-light bgc text-center">
+										<tr>
+											<th scope="col">堂數</th>
+											<th scope="col">日期</th>
+											<th scope="col">授課時間</th>
+											<th scope="col">時數</th>
+											<th scope="col">課程進度/內容</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<th>1</th>
+											<td>9/6
+
+												(三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>
+												Introduction<br>
+												Unit 7: Entertain us
+												<ul>
+													<li>增進公務閒談話題:音樂、電視節目及電影等</li>
+													<li>口語語法：used to</li>
+										 </ul>
+
+											</td>
+										</tr>
+										<tr>
+											<th>2</th>
+											<td>9/13   (三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Unit 7: Entertain us<ul>
+													<li>如何拒絶邀請</li>
+													<li>如何回應他人的拒絶</li>
+													<li>口語語法：Comparisons with (not) as … as</li>
+												</ul>
+											</td>
+
+
+										</tr>
+										<tr>
+											<th>3</th>
+											<td>9/20   (三)
+
+											</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Unit 8: Getting there
+												<ul>
+													<li>描述工作經歷</li>
+													<li>談論工作進展</li>
+													<li>語語法：現在完成進行式的運用</li>
+												</ul>
+											</td>
+
+										</tr>
+										<tr>
+											<th>4</th>
+											<td>9/27   (三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Unit 8: Getting there
+												<ul>
+													<li>關注熟人的近況
+													</li>
+													<li>談論時間管理</li>
+													<li>口語語法：現在完成式與現在完成進行式的運用</li>
+												</ul>
+											</td>
+
+										</tr>
+
+										<tr>
+											<th>5</th>
+											<td>10/4   (三)</td>
+											<td>18:30-21:30
+
+											</td>
+											<td>3</td>
+											<td>Unit 9: Make it work
+												<ul>
+													<li>談論大學學科</li>
+													<li>談論在家上班與自學規則</li>
+													<li>口語語法：表達必要性的多種方式</li>
+												</ul>
+											</td>
+
+										</tr>
+
+
+										<tr>
+
+											<td colspan="5" class="text-light
+											text-center bgc" style="background-color:var(--bgc) ;">10/11(三)停課一次</td>
+
+										</tr>
+									
+										<tr>
+											<th>6</th>
+											<td>10/18   (三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Unit 9: Make it work
+												<ul>
+													<li>信心的展現與缺乏信心</li>
+													<li>撰寫履歷表</li>
+													<li>口語語法：如何表達禁止與同意</li>
+												</ul>
+											</td>
+
+										</tr>
+										<tr>
+											<th>7</th>
+											<td>10/25   (三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Review of Units 7-9
+												<ul>
+													<li>語彙複習與運用</li>
+													<li>情境摸擬互動練習</li>
+												</ul>
+											</td>
+
+										</tr>
+										<tr>
+											<th>8</th>
+											<td>11/1   (三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Unit 10: Why we buy
+												<ul>
+													<li>討論貨物的材質</li>
+													<li>談論貨物的產地</li>
+													<li>口語語法：簡單現在被動語態的運用</li>
+
+												</ul>
+
+											</td>
+
+										</tr>
+										<tr>
+											<th>9</th>
+											<td>11/8   (三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Unit 10: Why we buy
+												<ul>
+													<li>
+														撰寫有關公司產品的回饋意見
+													</li>
+													<li>購物心理與商品設計</li>
+													<li>口語語法：簡單現在被動語態的運用</li>
+												</ul>
+											</td>
+
+										</tr>
+										<tr>
+											<th>10</th>
+											<td>11/15   (三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Unit 11: Pushing yourself
+												<ul>
+													<li>談論成功的要件</li>
+													<li>給予意見與徵求同意</li>
+												</ul>
+											</td>
+
+										</tr>
+										<tr>
+											<th>11</th>
+											<td>11/22   (三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Unit 11: Pushing yourself
+												<ul>
+													<li>機會與風險，失敗與教訓</li>
+													<li>談論自己所欽佩的人</li>
+													<li>口語語法：現在與未來假設的情況</li>
+												</ul>
+											</td>
+
+										</tr>
+										<tr>
+											<th>12</th>
+											<td>11/29   (三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Unit 12: Life’s little lessons
+												<ul>
+													<li>談論經歷身心極端狀態的感受</li>
+													<li>描述自己的感受、猜測他人的感受</li>
+												</ul>
+											</td>
+
+										</tr>
+										<tr>
+											<th>13</th>
+											<td>12/6   (三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Unit 12: Life’s little lessons
+												<ul>
+													<li>
+														人生經歷中的趣事
+													</li>
+													<li>談論如何從錯誤中學習</li>
+												</ul>
+											</td>
+
+										</tr>
+										<tr>
+											<th>14</th>
+											<td>12/13   (三)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>Review of Units 10-12
+												<ul>
+													<li>總複習及生活職場情境模擬互動</li>
+												</ul>
+											</td>
+
+										</tr>
+									</tbody>
+								</table>
+
+							</td>
+
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+
+
+			<!-- 商用日語 -->
+
+
+
+			<h3>財團法人亞太綜合研究院-商用日語實務班第2期</h3>
+			<div class="table-responsive w-100 mb-5">
+				<table class="table   table-bordered border-dark ">
+					<thead class="text-light bgc text-center">
+						<tr>
+							<th scope="col">班別名稱</th>
+							<th scope="col">訓練起迄
+
+								日期</th>
+							<th scope="col">上課時間</th>
+							<th scope="col">訓練
+								人數</th>
+							<th scope="col">時數</th>
+							<th scope="col">講師姓名</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th style="font-size: large;" class="bg-light " rowspan="18">商用日語實務班
+								第02期<br><a class="btn btn-primary btn-md mt-3"
+									href="公告們/招訓簡章-商用日語實務班第02期.pdf" target="_blank">招生簡章</a></th>
+							<td>112/09/04
+
+								~
+
+								112/12/11</td>
+							<td>週一18:30 ~21:30
+
+							</td>
+							<td>20</td>
+							<td>42</td>
+							<td>林田響子</td>
+
+						</tr>
+						<tr>
+							<td colspan="5">
+								訓練目標：日籍老師循序漸進方式，確實掌握文意及文法的運用，使學員能更靈活應用與表達，並能在就業職場方面更能得心應手；藉由演練與測驗，增加日語文意及文法的運用能力及提升職場語言溝通能力，而擴大自己的就業職場及國際視野，為職場表現加分。<br>
+								學員資格條件：<br>
+								1、須具備N4日文能力或等同程度之日文能力者為佳。
+								<br>2、從事產業或工作對日文有需求者。
+								<br>3、對商用日文有興趣者。
+								<br>
+								課程內容： 教材名稱: 輕鬆學日語入門篇Ⅱ、進階篇(致良出版社)
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5" rowspan="16">
+								<table class="table
+									table-hover
+									table-bordered border-dark">
+									<thead class="text-light bgc text-center">
+										<tr>
+											<th scope="col">堂數</th>
+											<th scope="col">日期</th>
+											<th scope="col">授課時間</th>
+											<th scope="col">時數</th>
+											<th scope="col">課程進度/內容</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<th>1</th>
+											<td>9/4
+
+												(一)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>
+												職場會話運用-~ことがある:有~事，有~的時侯的用法/學
+習請託別人的表達方式/文法解析及會話 
+
+											</td>
+										</tr>
+										<tr>
+											<th>2</th>
+											<td>9/11
+
+												(一)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>職場會話運用-~ておく:為進行某事而預先做好準備/學習用〈どこか~ましょうか〉的邀請方法/文法解析及會話
+											</td>
+
+
+										</tr>
+										<tr>
+											<th>3</th>
+											<td>9/18
+
+												(一)
+
+											</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>職場會話運用-敬語的練習/學習使用表示「強調、說明」的「~てみる」的用法/文法解析及會話 </td>
+
+										</tr>
+										<tr>
+											<th>4</th>
+											<td>9/25
+
+												(一)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>職場會話運用-かもしれません:可能、也許的用法/手紙の形式と習慣(書信的格式與習慣)/文法解析及會話
+											</td>
+
+										</tr>
+
+										<tr>
+											<th>5</th>
+											<td>10/2
+
+												(四)
+
+											</td>
+											<td>18:30-21:30
+
+											</td>
+											<td>3</td>
+											<td>職場會話運用-~てくださいませんか:向人拜託某事時之鄭重用語/學習間接疑問句的用法/文法解析及會話
+											</td>
+
+										</tr>
+										<tr>
+
+											<td colspan="5" class="text-light
+												text-center bgc" style="background-color:var(--bgc) ;">10/9(一)停課一次</td>
+
+										</tr>
+										
+										<tr>
+											<th>6</th>
+											<td>10/16
+
+												(一)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>職場會話運用-言葉のおもしろさ:言語的有趣處/學習敬語的用法/文法解析及會話 </td>
+
+										</tr>
+										<tr>
+											<th>7</th>
+											<td>10/23
+
+												(一)
+
+											</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>職場會話運用-~より:表示比較的基準/學習使用「許可」、「不許可」、「禁止」的表達方式/文法解析及會話
+											</td>
+
+										</tr>
+										<tr>
+											<th>8</th>
+											<td>10/30
+
+												(一)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>職場會話運用-學習表達某事和另一件事情相似的「~のようです」的比喻用法/文法解析及會話
+
+											</td>
+
+										</tr>
+										<tr>
+											<th>9</th>
+											<td>11/6
+
+												(一)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>職場會話運用-~ことにする:表示「自己下定決心做某事」之意/學習表達「假定、條件」的「~ば」、「~たら」的用法/文法解析及會話
+											</td>
+
+										</tr>
+										<tr>
+											<th>10</th>
+											<td>11/13
+
+												(一)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>職場會話運用-學習表示某種狀態之意的「~ています」的使用方法/文法解析及會話 </td>
+
+										</tr>
+										<tr>
+											<th>11</th>
+											<td>11/20
+
+												(一)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>職場會話運用-學習表示「條件、假定」的「と」的用法/「強調」的「し」的用法/文法解析及會話 </td>
+
+										</tr>
+										<tr>
+											<th>12</th>
+											<td>11/27
+
+												(一)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>職場會話運用-~ても~ても:無論…或…/學習表達「原因」、「理由」的「~て(で)」的用法/文法解析及會話 </td>
+
+										</tr>
+										<tr>
+											<th>13</th>
+											<td>12/4
+
+												(一)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>職場會話運用-學習使役動詞(叫…人做…事)的表達方式/認識常體的表達方式/文法解析及會話
+											</td>
+
+										</tr>
+										<tr>
+											<th>14</th>
+											<td>12/11
+
+												(一)</td>
+											<td>18:30-21:30</td>
+											<td>3</td>
+											<td>總複習-文法解析及會話運用 </td>
+
+										</tr>
+									</tbody>
+								</table>
+
+							</td>
+
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+
+			<!--  -->
+
+
+
+
+
+
+		</div>
+
+	</section>
+
+
+
+
+
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="row d-flex ">
+				<div class="footer-col">
+					<h4>亞太綜合研究院</h4>
+					<ul>
+						<li><a href="index.html">首頁</a></li>
+						<li><a href="本院簡介.html">本院簡介</a></li>
+						<li><a href="各所簡介.html">各所簡介</a></li>
+						<li><a href="公告們/課程公告1.html">活動公告</a></li>
+						<li><a href="課程資訊.html">課程資訊</a></li>
+						<li><a href="學員心得.html">學員心得</a></li>
+						<li><a href="研究與活動.html">研究與活動</a></li>
+						<li><a href="相關機構.html">相關機構</a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="footer-col">
+					<h4>
+						相關人士
+					</h4>
+					<ul>
+						<li><a href="#">捐助人 劉快治 女士</a></li>
+						<li><a href="http://www.twaprf.org/FounderWJHresume.htm" target="_blank">董事長 王仁宏 博士 </a></li>
+						<li><a href="http://www.twaprf.org/20230101TangShaocheng.pdf" target="_blank">院長 湯紹成 博士</a></li>
+					</ul>
+
+
+				</div>
+
+				<div class="footer-col ">
+					<h4>追蹤我們</h4>
+					<ul class="social-links">
+						<li><a href="https://www.facebook.com/kao.aprf/"><i class="fa-brands fa-facebook"></i></a></li>
+					</ul>
+
+				</div>
+
+				<div class="footer-col">
+					<h4>聯絡資訊</h4>
+					<ul>
+						<li><a href="mailto:aprf7029@ms15.hinet.net">Email: aprf7029@ms15.hinet.net</a></li>
+						<li><a href="#">院址:高雄市前鎮區民權二路八號二十五樓</a></li>
+						<li><a href="#">TEL：(07)3357131</a></li>
+						<li><a href="#">FAX：(07)3363465</a></li>
+						<hr />
+						<li><a href="#">台北辦公室:台北市大安區和平東路一段216號10樓</a></li>
+						<li><a href="#">TEL：(02)23683688</a></li>
+						<li><a href="#">FAX：(02)23643624</a></li>
+
+					</ul>
+
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+	<script>
+		var prevScrollPos = window.pageYOffset;
+		var scrollThreshold = 70; // 滚动阈值
+
+		window.onscroll = function () {
+			var currentScrollPos = window.pageYOffset;
+			var scrollDifference = Math.abs(currentScrollPos - prevScrollPos);
+
+			if (scrollDifference >= scrollThreshold) {
+				if (prevScrollPos > currentScrollPos) {
+					document.getElementById("main-header").classList.remove("scroll-hide");
+				} else {
+					document.getElementById("main-header").classList.add("scroll-hide");
+				}
+
+				prevScrollPos = currentScrollPos;
+			}
+		};
+
+
+	</script>
 </body>
 
 </html>
